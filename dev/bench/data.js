@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1649505674915,
-  "repoUrl": "https://github.com/yewstack/yew",
+  "lastUpdate": 1664665326110,
+  "repoUrl": "https://github.com/wdcocq/yew",
   "entries": {
     "Yew master branch benchmarks (Lower is better)": [
       {
@@ -12316,6 +12316,120 @@ window.BENCHMARK_DATA = {
           {
             "name": "yew-struct-keyed 34_startup-totalbytes",
             "value": "328.740234375",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "WorldSEnder@users.noreply.github.com",
+            "name": "WorldSEnder",
+            "username": "WorldSEnder"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0ecee11a2f8a8814e1997c2d0b4ab0b49da949d0",
+          "message": "Fix portal shifting on reconciliation too often (#2891)\n\n* fix portal shifting on reconciliation too often\r\n\r\nthe public vdom api changes to only allow directly\r\nsetting a Node as sibling (still optional) instead of a NodeRef.\r\nThis was the intention all along, since the NodeRef was\r\nnot dynamically tracked, and creating a portal into a subtree\r\nalready controlled by yew is not supported anway.\r\n\r\n* fix feature soundness\r\n\r\n* fix doc tests",
+          "timestamp": "2022-09-28T09:32:19+03:00",
+          "tree_id": "9cd8a7c53260d494af69fd550aad4d678fa83dbc",
+          "url": "https://github.com/wdcocq/yew/commit/0ecee11a2f8a8814e1997c2d0b4ab0b49da949d0"
+        },
+        "date": 1664665324654,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "yew-struct-keyed 01_run1k",
+            "value": "155.39749999999998",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 02_replace1k",
+            "value": "167.71699999999998",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 03_update10th1k_x16",
+            "value": "413.4595",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 04_select1k",
+            "value": "73.584",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 05_swap1k",
+            "value": "101.819",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 06_remove-one-1k",
+            "value": "32.6045",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 07_create10k",
+            "value": "2360.0515",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 08_create1k-after1k_x2",
+            "value": "392.326",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 09_clear1k_x8",
+            "value": "172.60750000000002",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 21_ready-memory",
+            "value": "1.389484405517578",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 22_run-memory",
+            "value": "1.6535873413085938",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 23_update5-memory",
+            "value": "1.6600189208984375",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 24_run5-memory",
+            "value": "1.6459503173828125",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 25_run-clear-memory",
+            "value": "1.263751983642578",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 31_startup-ci",
+            "value": "1880.64",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 32_startup-bt",
+            "value": "48.28799999999999",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 33_startup-mainthreadcost",
+            "value": "237.14800000000005",
+            "unit": ""
+          },
+          {
+            "name": "yew-struct-keyed 34_startup-totalbytes",
+            "value": "362.98828125",
             "unit": ""
           }
         ]
